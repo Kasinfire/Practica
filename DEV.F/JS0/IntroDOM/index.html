@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja de comentarios</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/correo.png" />
+</head>
+
+<body>
+    <div class="imgBackground">
+        <img src="assets/montain.png" class="img__mountain" alt="montain">
+        <img src="assets/claude.png" class="img__claude img__smallClaude" alt="claude">
+        <img src="assets/claude2.png" class="img__claude img__bigClaude" alt="claude2">
+        <img src="assets/claude.png" class="img__claude img__smallClaude2" alt="claude3">
+        <img src="assets/claude2.png" class="img__claude img__bigClaude2" alt="claude4">
+        <img src="assets/claude2.png" class="img__claude img__bigClaude3" alt="claude5">
+        <div class="grassStrip"></div>
+
+        <div class="container">
+            <form id="myForm">
+                <label class="form__label">User:</label>
+                <input id="userName" class="form__field" type="text" name="name" placeholder="Tu user aquí" />
+                <label class="form__label">Email:</label>
+                <input id="userEmail" class="form__field" type="text" name="email" placeholder="example@email.com" />
+                <textarea id="userComent" class="form__field" type="text" name="coment"
+                    placeholder="Escribe tu comentario :D" rows="7" cols="40"></textarea>
+                <input id="btnSubmit" class="form__button" type="button" name="button" onclick="comentarios()"
+                    value="Submit" />
+            </form>
+        </div>
+        <div class="mobile__message">
+        <p>Esta página está optimizada para computadora. Por favor ingresa desde un escritorio para verla correctamente.</p>
+        </div>
+        <footer>
+            <a class="foot__text" href="https://github.com/Kasinfire" target="_blank">&copy; Kasinfire</a>
+            <p >Esta página no recolecta datos.</p>
+        </footer>
+    </div>
+    <script src="cajaComentarios.js"></script>
+</body>
+
+</html>
